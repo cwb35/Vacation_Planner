@@ -10,18 +10,11 @@ categories, so you could look for the best pizza places in NY for example
 This is project I built for practice with web scraping and using API's
 """
 
-import sys
-import argparse
-import requests
+import sys, argparse, requests, os, errno, re, json, io
 from bs4 import BeautifulSoup
 from yelp.client import Client
 from yelp.oauth1_authenticator import Oauth1Authenticator
 import pandas as pd
-import os
-import errno
-import re
-import json
-import io
 
 creds = json.load(io.open(r'C:\Users\Colin\Documents\Python Scripts\Vacation_Planner\config_secret.json'))
 auth = Oauth1Authenticator(**creds)
