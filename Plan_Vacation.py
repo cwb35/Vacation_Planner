@@ -20,14 +20,11 @@ import pandas as pd
 import os
 import errno
 import re
+import json
+import io
 
-#Insert your API tokens here!
-auth = Oauth1Authenticator(
-    consumer_key='',
-    consumer_secret='',
-    token='',
-    token_secret=''
-)
+creds = json.load(io.open(r'C:\Users\Colin\Documents\Python Scripts\Vacation_Planner\config_secret.json'))
+auth = Oauth1Authenticator(**creds)
 client = Client(auth)
 
 def export_to_csv(town_dict, output):
