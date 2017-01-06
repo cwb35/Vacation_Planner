@@ -23,10 +23,10 @@ import re
 
 #Insert your API tokens here!
 auth = Oauth1Authenticator(
-    consumer_key='WjHA_2UedFy--vGdHMuWrg',
-    consumer_secret='Aoc2zhOj1DsSJI63EGXFz_a-gnk',
-    token='Hbwqpx0L8KMS5ChmMOje_m8Fgk4QX1ZD',
-    token_secret='9A82j1EJivDx-e8KHUmAikZOzeg'
+    consumer_key='',
+    consumer_secret='',
+    token='',
+    token_secret=''
 )
 client = Client(auth)
 
