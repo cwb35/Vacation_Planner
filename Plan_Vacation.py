@@ -16,7 +16,7 @@ from yelp.client import Client
 from yelp.oauth1_authenticator import Oauth1Authenticator
 import pandas as pd
 
-creds = json.load(io.open(r'C:\Users\Colin\Documents\Python Scripts\Vacation_Planner\config_secret.json'))
+creds = json.load(io.open('config_secret.json'))
 auth = Oauth1Authenticator(**creds)
 client = Client(auth)
 
